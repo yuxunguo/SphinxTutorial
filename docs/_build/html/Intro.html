@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Intro &mdash; Sphinx tutorial 1.0 documentation</title>
+  <title>Introduction &mdash; Sphinx tutorial 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=7ab3649f" />
       <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -19,6 +19,7 @@
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
       <script src="_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="_static/copybutton.js?v=f281be69"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -47,7 +48,15 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Intro</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#subsection">Subsection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subsubsection">Subsubsection</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#paragraph-and-list">Paragraph and List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#commands-and-enviroment">Commands and enviroment</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">SphinxTutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SubModule1.html">SubModule1 package</a></li>
 </ul>
@@ -66,7 +75,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Intro</li>
+      <li class="breadcrumb-item active">Introduction</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/Intro.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -76,9 +85,97 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="intro">
-<h1>Intro<a class="headerlink" href="#intro" title="Link to this heading"></a></h1>
-<p>Put your introduction here.</p>
+  <section id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
+<section id="subsection">
+<h2>Subsection<a class="headerlink" href="#subsection" title="Link to this heading"></a></h2>
+<section id="subsubsection">
+<h3>Subsubsection<a class="headerlink" href="#subsubsection" title="Link to this heading"></a></h3>
+<p>Section/subsection/subsection title can be added by addressing them with ‘====’/’——‘/’~~~~~~’</p>
+</section>
+</section>
+<section id="paragraph-and-list">
+<h2>Paragraph and List<a class="headerlink" href="#paragraph-and-list" title="Link to this heading"></a></h2>
+<p>New paragraph can be created with a empty line inbetween.</p>
+<p>This is a new paragraph.</p>
+<div class="line-block">
+<div class="line">If you don’t want a completely new paragraph.</div>
+<div class="line">‘|’ Creates force-line-break paragraph with empty lines before and after</div>
+</div>
+<div class="line-block">
+<div class="line">This is an example</div>
+<div class="line">of paragraph</div>
+<div class="line">that force the line-break.</div>
+</div>
+<p>‘-’ and ‘*’ start list with dot, ‘#.’ start numbered list, with empty lines before and after the lists.</p>
+<ul>
+<li><p>This is</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>You can</p></li>
+<li><p>do sublist</p></li>
+<li><p>but still need empty lines before and after the sublist</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>an example of dotted lists with ‘-’ or ‘*’</p></li>
+<li><div class="line-block">
+<div class="line">You can also do force line-break for each item</div>
+<div class="line">if you find certain item need this.</div>
+</div>
+</li>
+</ul>
+<ol class="arabic">
+<li><p>This is</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>You can</p></li>
+<li><p>do mixed-type sublist</p></li>
+<li><p>but still need empty lines before and after the sublist</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>an</p></li>
+<li><p>example of numbered lists with ‘#.’</p></li>
+</ol>
+</section>
+<section id="commands-and-enviroment">
+<h2>Commands and enviroment<a class="headerlink" href="#commands-and-enviroment" title="Link to this heading"></a></h2>
+<p>Two types of command are allowed: inline or stand-out</p>
+<div class="line-block">
+<div class="line">First, inline code block can be addressed by `` something`` e.g. <code class="docutils literal notranslate"><span class="pre">code</span></code>.</div>
+<div class="line">Note that there should be no space after `` or ` , otherwise it will be recongized as a symbol.</div>
+<div class="line">Second, hyperlink can be added with  ` Name &lt;link&gt;`_, e.g. <a class="reference external" href="https://github.com/yuxunguo/SphinxTutorial">Sphinx-Tutorial Git Page</a> (noting the last underline after the ` )</div>
+</div>
+<p>Other inline commands can be used as <code class="docutils literal notranslate"><span class="pre">:inlinecommand:`input`</span></code> similar to the <code class="docutils literal notranslate"><span class="pre">\inlinecommand{input}</span></code>  syntax in LaTeX. For instance,</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">:ref:`something`</span></code> generates a link to some module, e.g., <a class="reference internal" href="module1.html#module-module1"><span class="std std-ref">module1 module</span></a>,</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:math:`something`</span></code> generates a math expression with LaTeX syntax, e.g., <span class="math notranslate nohighlight">\(\xi+\pi\)</span></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:func:`something`</span></code> generates a link to function, e.g. <a class="reference internal" href="module1.html#module1.Module1_TestFunc1" title="module1.Module1_TestFunc1"><code class="xref py py-func docutils literal notranslate"><span class="pre">module1.Module1_TestFunc1()</span></code></a></p></li>
+<li><div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">:meth:`something`</span></code> generates a link to a meth in class, e.g. <a class="reference internal" href="module1.html#module1.Module1_TestFunc1" title="module1.Module1_TestFunc1"><code class="xref py py-meth docutils literal notranslate"><span class="pre">module1.Module1_TestFunc1()</span></code></a></div>
+<div class="line">(it seems <code class="docutils literal notranslate"><span class="pre">:func:</span></code> and <code class="docutils literal notranslate"><span class="pre">:meth:</span></code> are practically the same but the copilots distinguish them.)</div>
+</div>
+</li>
+</ul>
+<p>The reference name of functions/method are their names by default, and the reference name for the module are their section names. But they can be customized.</p>
+<p>The stand-out enviroment can be create with command <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">command</span> <span class="pre">::</span> <span class="pre">options</span></code> with empty lines before and after, as well as a following section as the input, similar to the <code class="docutils literal notranslate"><span class="pre">\begin{command}</span> <span class="pre">\end{command}</span></code> syntax of LaTeX.</p>
+<p>For instance,</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">code-block::</span> <span class="pre">py</span></code> generates a python code block</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="n">dir_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+</pre></div>
+</div>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">math::</span></code> generates a stand-out math expression with LaTeX syntax</p>
+<div class="math notranslate nohighlight">
+\[f(a)=\sum_{i=1}^{\infty}\frac{i^4}{\pi} a_i\]</div>
+</li>
+</ul>
+<p>The commands of reStructuredText can be used in the docstring documentations and follows the same rules!</p>
+</section>
 </section>
 
 

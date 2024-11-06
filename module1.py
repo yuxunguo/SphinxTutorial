@@ -10,3 +10,25 @@ def Module1_TestFunc1(test):
         int : N/A
     """
     return 0
+
+def TFF(arg1, args_other):
+    """The Transition form factor (TFF) $\mathcal{F}(xi, t)$
+    
+    | Some more description there
+    | Line break can be enforced by '|'
+    
+    Args:
+        arg1: array in the form of [arg1_1,arg1_2,...]
+    
+            - arg1_1 = some descriptions
+            - | arg1_2 = some descriptions
+              | force a line break here
+            - ...
+            
+        args_other: other arguments
+        
+    Returns:
+        complex : TFF \mathcal{F}(xi, t)
+    """
+    return 0
+    
