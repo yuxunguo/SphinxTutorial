@@ -25,7 +25,7 @@ This is a new paragraph.
 | of paragraph
 | that force the line-break.
 
-'-' and '*' start list with dot, '#.' start numbered list, with empty lines before and after the lists.
+'-' and '*' start list with dot, with empty lines before and after the lists.
 
 - This is 
   
@@ -36,6 +36,8 @@ This is a new paragraph.
 - an example of dotted lists with '-' or '*'
 - | You can also do force line-break for each item
   | if you find certain item need this.
+
+'#.' start numbered list, with empty lines before and after the lists.
 
 #. This is
 

@@ -12,7 +12,7 @@ def Module1_TestFunc1(test):
     return 0
 
 def TFF(arg1, args_other):
-    """The Transition form factor (TFF) $\mathcal{F}(xi, t)$
+    r"""The Transition form factor (TFF) $\mathcal{F}(xi, t)$
     
     | Some more description there
     | Line break can be enforced by '|'
